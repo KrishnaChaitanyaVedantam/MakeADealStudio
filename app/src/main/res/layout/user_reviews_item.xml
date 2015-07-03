@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meakagetreview.MainActivity" >
+
+    <TextView
+        android:id="@+id/txtRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/color_user_reviews"
+        android:text="3/5" />
+
+    <TextView
+        android:id="@+id/txtTitleheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtRating"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/green_blue"
+        android:text="Nice product" />
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtTitle"
+        android:layout_alignParentRight="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:layout_margin="10dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_alignLeft="@+id/txtTitleheading"
+        android:layout_margin="10dp"
+        android:layout_below="@id/txtTitleheading"
+        android:text="21-06-2015" />
+
+    <TextView
+        android:id="@+id/txtSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txtDate"
+        android:layout_below="@id/txtDate"
+        android:textColor="#000"
+        android:layout_margin="10dp"
+        android:text="Summary" />
+
+    <TextView
+        android:id="@+id/txtpros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_green"
+        android:layout_margin="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtSummary"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textcons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:layout_margin="10dp"
+        android:layout_below="@id/txtpros"
+        android:text="TextView" />
+
+</RelativeLayout>

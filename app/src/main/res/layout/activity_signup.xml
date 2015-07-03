@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.niharinfo.makeadeal.SignupActivity">
+
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        android:id="@+id/smoothPB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/PocketProgressBar"
+        android:visibility="invisible"
+        android:indeterminate="true"/>
+
+    <ImageView
+        android:id="@+id/imgSignUpLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:src="@mipmap/logo_round"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/txtRegistrationMessage"
+        />
+
+    <TextView
+        android:id="@+id/txtRegistrationMessage"
+        android:layout_above="@+id/txtMakeADealLogin"
+        style="@style/MessageTextView"
+        />
+
+    <TextView
+        android:id="@+id/txtMakeADealLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/lnrSignUp"
+        style="@style/txtTitle"
+        android:textColor="@color/com_facebook_blue"
+        android:text="@string/signup"/>
+
+    <LinearLayout
+        android:id="@+id/lnrSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:weightSum="4"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:inputType="textEmailAddress"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@mipmap/email"
+            android:hint="@string/email"
+            style="@style/edt_login"
+            />
+
+        <EditText
+            android:id="@+id/edtDisplayName"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@mipmap/user_login"
+            android:hint="@string/display_name"
+            style="@style/edt_login"
+            />
+
+        <EditText
+            android:id="@+id/edtSignUpPassword"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@mipmap/password"
+            android:hint="@string/password"
+            style="@style/edt_login"
+            />
+
+        <EditText
+            android:id="@+id/edtSignUpConfirmPassword"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@mipmap/password"
+            android:hint="@string/cnf_pwd"
+            style="@style/edt_login"
+            />
+
+
+        <EditText
+            android:id="@+id/edtPhoneNumber"
+            android:inputType="number"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@mipmap/phone"
+            android:hint="@string/phone"
+            style="@style/edt_login"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTerms"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lnrSignUp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"/>
+
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        style="@style/btnStyle"
+        android:textColor="@color/white"
+        android:layout_below="@id/txtTerms"
+        android:layout_centerHorizontal="true"
+        android:text="@string/register"
+        android:background="@color/fb_blue"
+        />
+
+</RelativeLayout>

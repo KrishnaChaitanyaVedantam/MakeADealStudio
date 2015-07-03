@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.niharinfo.makeadeal.ChangePwdActivity">
+
+
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        android:id="@+id/pb_google_plus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        style="@style/PocketProgressBar"/>
+
+    <ImageView
+        android:id="@+id/imgChPwdLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:src="@mipmap/logo_round"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/txtResponseMessageChPwd"
+        />
+
+
+    <TextView
+        android:id="@+id/txtResponseMessageChPwd"
+        android:layout_above="@+id/txtMakeADealLoginChPwd"
+        style="@style/MessageTextView"
+        />
+
+    <TextView
+        android:id="@+id/txtMakeADealLoginChPwd"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/edtChangePasswordEmail"
+        style="@style/txtTitle"
+        android:textColor="@color/com_facebook_blue"
+        android:text="@string/chpwd"/>
+
+    <EditText
+        android:id="@+id/edtChangePasswordEmail"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/em"
+        android:hint="@string/email"
+        style="@style/edt_login"
+        />
+
+    <Button
+        android:id="@+id/btnReset"
+        style="@style/login_button"
+        android:background="@drawable/twitter_button"
+        android:text="@string/reset"
+        android:layout_below="@id/edtChangePasswordEmail"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/pbSelectedItemDisplay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:indeterminateDrawable="@drawable/custom_progress" />
+
+
+    <RelativeLayout
+        android:id="@+id/relSelectedItem"
+        android:layout_width="match_parent"
+        style="@style/nowCardStyle"
+        android:layout_height="250dp">
+
+        <ProgressBar
+            android:id="@+id/pbSelectedItemDisplayImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:indeterminateDrawable="@drawable/custom_progress" />
+
+        <ImageView
+            android:id="@+id/imgSelectedProductMain"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerInside"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img_one"/>
+
+        <ImageView
+            android:id="@+id/imgSelectedItemWishlist"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@mipmap/star"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <ImageView
+            android:id="@+id/imgSelectedItemAlert"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/alert_item"
+            android:scaleType="fitXY"
+            android:layout_below="@id/imgSelectedItemWishlist"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <ImageView
+            android:id="@+id/imgSelectedItemCompare"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@mipmap/compare"
+            android:scaleType="fitXY"
+            android:layout_below="@id/imgSelectedItemAlert"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <!--<TextView
+            android:id="@+id/txtMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="view all"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>-->
+
+        <Button
+            android:id="@+id/txtMore"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            android:background="@color/fb_blue"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="View All"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <!--<Gallery
+            android:id="@+id/glSelectedItem"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/imgSelectedProductMain"></Gallery>-->
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtTitleSelectedItem"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="This is title"
+        android:maxLines="2"
+        android:layout_below="@id/relSelectedItem"
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/download"
+        android:text="@string/download"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/fb_blue"
+        android:background="@null"
+        android:layout_below="@id/relSelectedItem"
+        android:textSize="12sp"
+        />
+
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:drawableTop="@mipmap/share"
+        android:text="@string/share"
+        android:textColor="@color/fb_blue"
+        android:background="@null"
+        android:textSize="12sp"
+
+        android:layout_alignTop="@+id/btnDownload"
+        android:layout_toLeftOf="@+id/btnDownload"
+        android:layout_toStartOf="@+id/btnDownload" />
+
+    <TextView
+        android:id="@+id/txtOriginalPriceSelectedItemProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDownload"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:text="@string/original_price"
+        />
+
+        <TextView
+            android:id="@+id/txtOriginalPriceSelItemProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnDownload"
+            android:layout_toRightOf="@id/txtOriginalPriceSelectedItemProduct"
+            android:layout_margin="5dp"
+            android:text="@string/original_price"
+            />
+
+    <TextView
+        android:id="@+id/txtOriginalPriceSelectedItemProductChanged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDownload"
+        android:layout_toRightOf="@id/txtOriginalPriceSelectedItemProduct"
+        android:layout_margin="5dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/txtLowestPriceSelectedItemProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOriginalPriceSelectedItemProduct"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:text="Lowest Price"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txtLowestPriceSelectedItemProductChanged"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOriginalPriceSelectedItemProduct"
+        android:layout_toRightOf="@id/txtLowestPriceSelectedItemProduct"
+        android:layout_margin="5dp"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="@string/original_price"
+        />
+
+        <LinearLayout
+            android:id="@+id/lnrSelectedItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtLowestPriceSelectedItemProductChanged"
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imgSelectedItemUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:src="@mipmap/user"
+        />
+
+    <TextView
+        android:id="@+id/txtRatingsExisted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/beer"
+        android:layout_gravity="left|center_vertical"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:text="3"
+        />
+
+    <TextView
+        android:id="@+id/txtRatingsSlash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/beer"
+        android:layout_gravity="left|center_vertical"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:text="/"
+        />
+
+    <TextView
+        android:id="@+id/txtTotalRatings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="5"
+        />
+
+        <RatingBar
+            android:id="@+id/rbSelectedItemProduct"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:isIndicator="false" />
+
+
+        <TextView
+        android:id="@+id/txtUserRatings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="/"
+        />
+
+    <TextView
+        android:id="@+id/txtUserMaxUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:textSize="25sp"
+        android:text="5"
+        />
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTotalRatings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@color/fb_blue"
+        android:layout_below="@id/lnrSelectedItem"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="8 Ratings"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/btnReviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@color/fb_blue"
+        android:layout_below="@id/lnrSelectedItem"
+        android:layout_toRightOf="@id/btnTotalRatings"
+        android:text="Write Review"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_margin="10dp"/>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/relSpecification"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/fb_blue"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtSpecification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="Compare Price"
+            android:layout_margin="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgCompareClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_delete"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lstComparePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

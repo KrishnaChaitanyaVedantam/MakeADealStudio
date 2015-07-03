@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <!--<fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        android:id="@+id/pbMakeADealAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        style="@style/PocketProgressBar"/>-->
+
+    <ProgressBar
+        android:id="@+id/pbNormalListProducts"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:indeterminateDrawable="@drawable/custom_progress" />
+
+    <ListView
+        android:id="@+id/lstProductsNormal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btnLoadLargeListLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/large_list"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@+id/txtAlertItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No Products In Alerts"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

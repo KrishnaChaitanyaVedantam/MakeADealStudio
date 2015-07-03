@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/relDescription"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/fb_blue"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtDescriptionPrices"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="Description"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:id="@+id/imgDescriptionClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_delete"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_below="@id/relDescription">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txtTitleDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_margin="10dp"
+                android:textStyle="bold" />
+
+            <WebView
+                android:id="@+id/webViewDesc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

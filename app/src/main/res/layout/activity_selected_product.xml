@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.niharinfo.makeadeal.SelectedProductActivity">
+
+    <FrameLayout
+        android:id="@+id/frmContainerProductsSelection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lnrButtonLayout">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/lnrButtonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnCompare"
+            style="@style/btnCompare"
+            android:drawableTop="@mipmap/price"
+            android:layout_marginRight="1dp"
+            android:text="@string/comp"/>
+
+        <Button
+            android:id="@+id/btnDescription"
+            style="@style/btnCompare"
+            android:text="Description"
+            android:layout_marginRight="1dp"
+            android:drawableTop="@mipmap/description"/>
+
+        <Button
+            android:id="@+id/btnSpecification"
+            style="@style/btnCompare"
+            android:text="@string/Specs"
+            android:layout_marginRight="1dp"
+            android:drawableTop="@mipmap/specification"/>
+
+        <Button
+            android:id="@+id/btnReview"
+            style="@style/btnCompare"
+            android:text="@string/review"
+            android:drawableTop="@mipmap/review"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

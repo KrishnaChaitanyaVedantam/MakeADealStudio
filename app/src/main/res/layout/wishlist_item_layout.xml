@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relNormalList"
+        android:layout_alignParentTop="true"
+        style="@style/nowCardStyle"
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/imgNormalWishListProductItem"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/img_one"
+
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtTitleNormalWishListProduct"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/relNormalList"
+        android:text="This is title"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_alignBaseline="@+id/relNormalList"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:typeface="sans"
+        android:textColor="@android:color/holo_red_dark"
+        android:id="@+id/txtBrandNameNormalWishListProduct"
+        android:layout_below="@+id/txtTitleNormalWishListProduct"
+        android:layout_alignLeft="@+id/txtTitleNormalWishListProduct"
+        android:layout_alignStart="@+id/txtTitleNormalWishListProduct" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txtCostNormalWishListProduct"
+        android:typeface="sans"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_below="@+id/txtBrandNameNormalWishListProduct"
+        android:layout_alignLeft="@+id/txtBrandNameNormalWishListProduct"
+        android:layout_alignStart="@+id/txtBrandNameNormalWishListProduct" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:typeface="sans"
+        android:textColor="@android:color/holo_green_light"
+        android:id="@+id/txtStockNormalWishListProduct"
+        android:layout_below="@+id/txtCostNormalWishListProduct"
+        android:layout_alignLeft="@+id/txtCostNormalWishListProduct"
+        android:layout_alignStart="@+id/txtCostNormalWishListProduct" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRemoveWishListProduct"
+        android:src="@mipmap/delete_icon"
+        android:background="@null"
+        android:layout_margin="12dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

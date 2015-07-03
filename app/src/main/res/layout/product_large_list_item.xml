@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" style="@style/nowCardStyle" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relLargeList"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+        <com.pinterest.pinit.PinItButton
+            android:id="@+id/imgPinLargeListProducts"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:id="@+id/imgLargeListProductItem"
+            android:layout_below="@id/imgPinLargeListProducts"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/img_one"
+            android:scaleType="centerInside"/>
+
+        <ImageView
+            android:id="@+id/imgPLLWishList"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:src="@drawable/rating_item"
+            android:layout_margin="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgPLLAlert"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/imgPLLWishList"
+            android:src="@drawable/alert_item"
+            android:layout_margin="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgPLLCompare"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/imgPLLAlert"
+            android:src="@drawable/compare_24"
+            android:layout_margin="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgNewLargeListProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/latest"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtTitleLargeListProduct"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toLeftOf="@+id/txtNewPriceLargeListProduct"
+        android:layout_margin="10dp"
+        android:layout_below="@id/relLargeList"
+        android:text="This is title "
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/txtNewPriceLargeListProduct"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:text="New Price"
+        android:layout_below="@+id/relLargeList"
+        android:layout_alignParentRight="true"
+        android:textSize="18sp"
+        android:textColor="@color/red"
+        />
+
+    <RatingBar
+        android:id="@+id/rbListLargeProductItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/txtTitleLargeListProduct"
+        android:numStars="5"
+        android:rating="3.5"
+        android:layout_margin="10dp"
+        />
+
+
+</RelativeLayout>

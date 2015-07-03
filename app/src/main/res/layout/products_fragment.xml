@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relFilter"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/fb_blue"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtProductCategory"
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:text="New Arrivals"
+            android:layout_centerVertical="true"
+            />
+
+        <Button
+            android:id="@+id/btnSort"
+            android:background="@null"
+            android:drawableLeft="@drawable/sortyby"
+            android:text="@string/btn_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btnFilter"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:drawableLeft="@drawable/filters"
+            android:text="@string/btn_filter"
+            android:layout_toLeftOf="@id/btnSort"
+            android:layout_alignBaseline="@id/btnSort"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"/>
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/frame_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relFilter"
+        android:background="@color/white"></FrameLayout>
+
+</RelativeLayout>

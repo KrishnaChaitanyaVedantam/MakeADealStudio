@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">MakeADeal</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="splash_image">Splash Image</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="welcome">Hello Welcome to</string>
+    <string name="APP_ID_FB">1641175566119548</string>
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+    <string name="title_activity_make_adeal_login">MakeADealLoginActivity</string>
+    <string name="twitter_login">LOG IN WITH TWITTER</string>
+    <string name="make_deal_login">LOG IN WITH EMAIL</string>
+    <string name="already_member">Already Signed Up?</string>
+    <string name="login_now">Login Now</string>
+    <string name="email">Email ID</string>
+    <string name="password">Password</string>
+    <string name="forgot">Forgot your password?</string>
+    <string name="login">Login</string>
+    <string name="title_activity_signup">SignupActivity</string>
+    <string name="signup">Sign Up</string>
+    <string name="name">Display Name</string>
+    <string name="bday">BirthDay</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="chpwd">Change Password</string>
+    <string name="reset">Send Password Email</string>
+    <string name="title_activity_categories">CategoriesActivity</string>
+    <string name="banner">Banner Image</string>
+    <string name="title_activity_products">ProductsActivity</string>
+    <string name="action_search">Search</string>
+    <string name="action_compare">Compare</string>
+    <string name="action_wish_list">WishList</string>
+    <string name="action_offers">Offers</string>
+    <string name="btn_sort">Sort By</string>
+    <string name="btn_filter">Filter</string>
+    <string name="txt_category">Womens New Arrivals</string>
+    <string name="phone">Phone Number</string>
+    <string name="display_name">User Name</string>
+    <string name="cnf_pwd">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="title_activity_chpwd">ChpwdActivity</string>
+    <string name="title_activity_change_pwd">ChangePwdActivity</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="comp">Compare</string>
+    <string name="Specs">Specification</string>
+    <string name="review">Review</string>
+    <string name="comp_price">Compare Prices</string>
+    <string name="download">Download</string>
+    <string name="share">Share</string>
+    <string name="original_price">Original Price : </string>
+    <string name="low_price">Lowest Price : </string>
+    <string name="search_hint">Search</string>
+    <string name="txt_sel_opt">Please Select Option</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >Find People</item>
+        <item >Photos</item>
+        <item >Communities</item>
+        <item >Pages</item>
+        <item >What\'s Hot</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@mipmap/star</item>
+        <item>@mipmap/star</item>
+        <item>@mipmap/star</item>
+        <item>@mipmap/star</item>
+        <item>@mipmap/star</item>
+        <item>@mipmap/star</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_products_navigation">ProductsNavigationActivity</string>
+    <string name="title_activity_products_nav">ProductsNavActivity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+    <string name="title_activity_products_hive_nav">ProductsHiveNav</string>
+    <string name="title_activity_selected_product">SelectedProductActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_compare_product">CompareProductActivity</string>
+    <string name="title_activity_wish_list">WishListActivity</string>
+    <string name="title_activity_write_review">WriteReviewActivity</string>
+    <string name="title_activity_image_viewer">ImageViewerActivity</string>
+    <string name="title_activity_products_browser">ProductsBrowserActivity</string>
+
+</resources>

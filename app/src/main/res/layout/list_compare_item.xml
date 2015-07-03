@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relCompareList"
+        android:layout_alignParentTop="true"
+        style="@style/nowCardStyle"
+        android:layout_width="150dp"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/imgCompareListProductItem"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/img_one"
+            android:scaleType="fitXY"/>
+
+       <!-- <ImageView
+            android:id="@+id/imgPinCompareListProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/pin"/>-->
+
+        <!--<ImageView
+            android:id="@+id/imgNewCompareListProducts"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/latest"
+            />-->
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtTitleCompareListProduct"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/relCompareList"
+        android:text="This is title"
+        android:layout_alignBaseline="@+id/relCompareList"
+        />
+
+    <TextView
+        android:id="@+id/txtOldPriceCompareListProduct"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Old Price"
+        android:layout_below="@+id/txtTitleCompareListProduct"
+        android:layout_toRightOf="@id/relCompareList"
+        />
+
+    <TextView
+        android:id="@+id/txtNewPriceCompareListProduct"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:text="New Price"
+        android:textColor="@color/red"
+        android:layout_below="@+id/txtTitleCompareListProduct"
+        android:layout_toRightOf="@id/txtOldPriceCompareListProduct"
+        />
+
+    <RatingBar
+        android:id="@+id/rbListCompareProductItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNewPriceCompareListProduct"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_toRightOf="@id/relCompareList"
+        android:numStars="5"
+        android:layout_margin="10dp"
+        />
+
+   <!-- <ImageView
+        android:id="@+id/imgCompareWishList"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/rbListCompareProductItem"
+        android:layout_toRightOf="@id/relCompareList"
+        android:src="@drawable/rating_item"
+        android:layout_margin="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgCompareAlert"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/rbListCompareProductItem"
+        android:layout_toRightOf="@id/imgCompareWishList"
+        android:src="@drawable/alert_item"
+        android:layout_margin="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgCompareCompare"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/rbListCompareProductItem"
+        android:layout_toRightOf="@id/imgCompareAlert"
+        android:src="@drawable/compare_24"
+        android:layout_margin="10dp"
+        />-->
+    <!--<ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRemoveProduct"
+        android:src="@mipmap/delete_icon"
+        android:background="@null"
+        android:layout_margin="12dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />-->
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.niharinfo.makeadeal.SearchActivity">
+
+    <item
+        android:id="@+id/action_search_s"
+        android:completionThreshold="1"
+        android:title="@string/action_search"
+        android:icon="@mipmap/search"
+        app:showAsAction="always"
+        android:maxWidth="500dp"
+        android:actionLayout="@layout/action_search_custom_layout"
+        />
+   <!-- <item android:id="@+id/action_compare_s" android:title="@string/action_compare" android:icon="@mipmap/compare"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_wishlist_s" android:title="@string/action_wish_list" android:icon="@mipmap/star"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_offers_s" android:title="@string/action_offers" android:icon="@mipmap/exclamation"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_settings_s" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />-->
+</menu>

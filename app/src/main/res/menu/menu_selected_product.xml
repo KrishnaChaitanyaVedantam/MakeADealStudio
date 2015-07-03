@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.niharinfo.makeadeal.SelectedProductActivity">
+    <item android:id="@+id/action_search_selected_product" android:title="@string/action_search"  android:icon="@mipmap/search"
+        android:showAsAction="always"/>
+    <item android:id="@+id/action_compare_selected_product" android:actionLayout="@layout/compare_update_count" android:title="@string/action_compare" android:icon="@mipmap/compare"
+        android:showAsAction="always" />
+    <item android:id="@+id/action_wishlist_selected_product" android:actionLayout="@layout/wishlists_update_count" android:title="@string/action_wish_list" android:icon="@mipmap/star"
+        android:showAsAction="always"/>
+    <item android:id="@+id/action_offers_selected_product" android:actionLayout="@layout/alert_update_count" android:title="@string/action_offers" android:icon="@mipmap/exclamation"
+        android:showAsAction="always"/>
+</menu>

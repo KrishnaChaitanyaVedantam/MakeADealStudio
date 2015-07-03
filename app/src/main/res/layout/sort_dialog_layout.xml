@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/txtSelectOption"
+        android:text="@string/txt_sel_opt"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/blue"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtLowToHighSort"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="Price -- Low to High"
+        android:layout_marginTop="0.1dp"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:background="@color/wallet_dim_foreground_inverse_disabled_holo_dark"
+        android:layout_below="@+id/txtSelectOption"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtHighToLowShort"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="Price -- High to Low"
+        android:layout_marginTop="0.1dp"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:background="@color/wallet_dim_foreground_inverse_disabled_holo_dark"
+        android:layout_below="@+id/txtLowToHighSort"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtLatestSort"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="Latest"
+        android:layout_marginTop="0.1dp"
+        android:layout_below="@+id/txtHighToLowShort"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:background="@color/wallet_dim_foreground_inverse_disabled_holo_dark"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="Popularity"
+        android:layout_marginTop="0.1dp"
+        android:id="@+id/txtPopularSort"
+        android:layout_below="@+id/txtLatestSort"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:background="@color/wallet_dim_foreground_inverse_disabled_holo_dark"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

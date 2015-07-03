@@ -1,0 +1,94 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.niharinfo.makeadeal.MakeADealLoginActivity">
+
+
+    <LinearLayout
+        android:id="@+id/lnrLoginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:weightSum="5"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgMakeADealLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:src="@mipmap/logo_round"
+            />
+
+    <TextView
+        android:id="@+id/txtMakeADealLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/lnrLogin"
+        style="@style/txtTitle"
+        android:textColor="@color/app_blue"
+        android:layout_weight="1"
+        android:text="Login"/>
+
+    <LinearLayout
+        android:id="@+id/lnrLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_centerInParent="true"
+        android:weightSum="2"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/edtLoginID"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:drawableLeft="@mipmap/user_login"
+            android:hint="@string/email"
+            style="@style/edt_login"
+            />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@mipmap/password"
+            android:hint="@string/password"
+            style="@style/edt_login"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lnrLogin"
+        style="@style/txtTitle"
+        android:layout_weight="1"
+        android:textColor="@color/app_login"
+        android:text="@string/forgot"/>
+    
+    <Button
+        android:id="@+id/btnLoginMakeADeal"
+        style="@style/btnStyle"
+        android:textColor="@color/white"
+        android:layout_below="@id/txtForgotPassword"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:layout_weight="1"
+        android:background="@color/fb_blue"
+        />
+    </LinearLayout>
+
+</RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.niharinfo.makeadeal.helper.ClearableAutoCompleteTextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/edtSearchText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dropDownWidth="match_parent"
+        android:dropDownHeight="250dp"
+        android:singleLine="true"
+        android:ems="10"
+        android:imeOptions="actionSearch"
+        android:inputType="textAutoComplete|textAutoCorrect">
+        <requestFocus/>
+
+    </com.niharinfo.makeadeal.helper.ClearableAutoCompleteTextView>

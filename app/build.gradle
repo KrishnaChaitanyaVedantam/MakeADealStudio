@@ -1,0 +1,43 @@
+    apply plugin: 'com.android.application'
+
+    android {
+        signingConfigs {
+            release {
+                storeFile file("/home/chaitanya/Desktop/MakeADeal.jks")
+                storePassword "makeadeal"
+                keyAlias "makeadeal"
+                keyPassword "makeadeal"
+            }
+        }
+        compileSdkVersion 22
+        buildToolsVersion "22.0.1"
+
+        defaultConfig {
+            applicationId "com.niharinfo.makeadeal"
+            minSdkVersion 14
+            targetSdkVersion 22
+            versionCode 1
+            versionName "1.0"
+        }
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+            debug {
+                debuggable false
+            }
+        }
+    }
+
+    dependencies {
+        compile fileTree(dir: 'libs', include: ['*.jar'])
+        compile 'com.facebook.android:facebook-android-sdk:3.20.0'
+        compile 'com.google.android.gms:play-services:7.3.0'
+        compile 'com.squareup.retrofit:retrofit:1.9.0'
+        compile 'com.github.castorflex.smoothprogressbar:library:1.1.0'
+        compile 'com.github.castorflex.smoothprogressbar:library-circular:1.1.0'
+        compile project(':pinit-sdk-1.0')
+        compile 'com.squareup.picasso:picasso:2.5.0'
+        compile 'com.android.support:appcompat-v7:22.1.1'
+    }

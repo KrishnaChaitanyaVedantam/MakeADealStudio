@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:background="@drawable/item_border"  android:layout_height="match_parent">
+
+    <RelativeLayout
+    android:id="@+id/relPGGridItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true">
+    <ImageView
+        android:id="@+id/imgPGMain"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/img_one"/>
+
+        <com.pinterest.pinit.PinItButton
+            android:id="@+id/btnPGPinItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+        android:id="@+id/imgPGNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+            android:background="@null"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/latest" />
+
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtPGProductTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relPGGridItem"
+        android:text="this is product name"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        style="?android:attr/textAppearanceSmall"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:id="@+id/txtPGProductOriginalPrice"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPGProductTitle"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:text="hi this is the"
+        android:ellipsize="end"
+        style="?android:attr/textAppearanceSmall"
+        android:layout_margin="2dp"/>
+
+    <TextView
+        android:id="@+id/txtPGProductDiscountPrice"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPGProductTitle"
+        android:layout_toRightOf="@id/txtPGProductOriginalPrice"
+        android:singleLine="true"
+        android:textColor="@color/red"
+        style="?android:attr/textAppearanceSmall"
+        android:text="hi this text"
+        android:ellipsize="end"
+        android:layout_margin="2dp"/>
+
+    <!--<RatingBar
+        android:id="@+id/rbGrdProductItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPGProductDiscountPrice"
+        android:layout_alignParentLeft="true"
+        style="?android:attr/ratingBarStyleSmall"
+        android:numStars="5"
+        android:rating="3.5"
+        android:layout_margin="2dp"
+        />-->
+    <ImageView
+        android:id="@+id/imgPGWishList"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/txtPGProductDiscountPrice"
+        android:src="@drawable/rating_item"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/imgPGAlert"
+        />
+
+    <ImageView
+        android:id="@+id/imgPGAlert"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/txtPGProductDiscountPrice"
+        android:layout_toLeftOf="@+id/imgPGCompare"
+        android:src="@drawable/alert_item"
+        android:layout_margin="5dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgPGCompare"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/txtPGProductDiscountPrice"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/compare_24"
+        android:layout_margin="5dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/white">
+    <RelativeLayout
+        android:id="@+id/relReview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/fb_blue"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtReview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:text="@string/review"
+            android:background="@null"
+            android:layout_margin="10dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgReviewClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_delete"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lstUserReviews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relReview"
+        android:layout_margin="10dp">
+    </ListView>
+
+</RelativeLayout>

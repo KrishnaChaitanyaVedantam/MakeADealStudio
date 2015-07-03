@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+    
+    <GridView
+        android:id="@+id/grdProducts"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:numColumns="2"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:stretchMode="columnWidth"/>
+
+    <ImageButton
+        android:id="@+id/btnLoadLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:src="@drawable/list"
+        />
+
+    <ProgressBar
+        android:id="@+id/pbGridProducts"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:indeterminateDrawable="@drawable/custom_progress" />
+    
+</RelativeLayout>

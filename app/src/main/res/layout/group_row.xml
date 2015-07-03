@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal">
+
+    <com.niharinfo.makeadeal.roundedimage.RoundedImageView
+        android:id="@+id/imgGroupItem"
+        style="@style/imgExpandableList"
+        />
+
+    <TextView
+        android:id="@+id/txtGroupItem"
+        style="@style/txtTitle"
+        android:textColor="@color/white"
+        android:background="@null"
+        android:textSize="24sp"/>
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <ListView
+        android:id="@+id/lstProductsLarge"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:divider="@color/fb_blue"
+        android:dividerHeight="2dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btnLoadGridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:src="@drawable/grid"
+        />
+
+    <ProgressBar
+        android:id="@+id/pbLargeListProducts"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:indeterminateDrawable="@drawable/custom_progress" />
+
+</RelativeLayout>

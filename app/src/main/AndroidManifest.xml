@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.niharinfo.makeadeal" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MakeADealLoginActivity"
+            android:label="@string/title_activity_make_adeal_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:label="@string/title_activity_signup"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CategoriesActivity"
+            android:label="@string/title_activity_categories"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ProductsActivity"
+            android:label="@string/title_activity_products"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ChangePwdActivity"
+            android:label="@string/title_activity_change_pwd"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SelectedProductActivity"
+            android:label="@string/title_activity_selected_product"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchActivity" />-->
+        </activity>
+        <activity
+            android:name=".CompareProductActivity"
+            android:label="@string/title_activity_compare_product"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".WishListActivity"
+            android:label="@string/title_activity_wish_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AlertActivity"
+            android:label="Alert"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WriteReviewActivity"
+            android:label="@string/title_activity_write_review"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ImageViewerActivity"
+            android:label="@string/title_activity_image_viewer" >
+        </activity>
+        <activity
+            android:name=".ProductsBrowserActivity"
+            android:label="@string/title_activity_products_browser" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.niharinfo.makeadeal.CategoriesActivity" />
+        </activity>
+    </application>
+
+</manifest>

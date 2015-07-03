@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtCompareNameExp"
+        style="@style/txtTitle"
+        android:background="@null"
+        android:textColor="@color/white"
+        android:textSize="24sp"/>
+
+</RelativeLayout>

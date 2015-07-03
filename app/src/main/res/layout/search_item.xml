@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:weightSum="2" android:layout_width="match_parent"
+    android:orientation="horizontal" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relSearchList"
+        android:layout_alignParentTop="true"
+        style="@style/nowCardStyle"
+        android:layout_weight="1"
+        android:layout_width="350dp"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/imgSearchListProductItem"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/img_one"
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/txtTitleSearchListProduct"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentTop="true"
+        android:text="This is title"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/txtOldPriceSearchListProduct"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Old Price"
+        android:textColor="@color/black"
+        android:layout_below="@+id/txtTitleSearchListProduct"
+        />
+
+    <TextView
+        android:id="@+id/txtNewPriceSearchListProduct"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:text="New Price"
+        android:textColor="@color/red"
+        android:layout_below="@+id/txtOldPriceSearchListProduct"
+        />
+
+    </RelativeLayout>
+
+    <!--<RatingBar
+        android:id="@+id/rbListSearchProductItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNewPriceSearchListProduct"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_toRightOf="@id/relSearchList"
+        android:numStars="5"
+        android:rating="3.5"
+        android:layout_margin="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgSearchWishList"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/rbListSearchProductItem"
+        android:layout_toRightOf="@id/relSearchList"
+        android:src="@drawable/rating_item"
+        android:layout_margin="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgSearchAlert"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/rbListSearchProductItem"
+        android:layout_toRightOf="@id/imgSearchWishList"
+        android:src="@drawable/alert_item"
+        android:layout_margin="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgSearchCompare"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/rbListSearchProductItem"
+        android:layout_toRightOf="@id/imgSearchAlert"
+        android:src="@drawable/compare_24"
+        android:layout_margin="10dp"
+        />-->
+
+
+</LinearLayout>

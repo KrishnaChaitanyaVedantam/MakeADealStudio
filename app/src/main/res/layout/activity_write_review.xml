@@ -1,0 +1,360 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none"
+    tools:context="com.niharinfo.makeadeal.WriteReviewActivity">
+
+    <RelativeLayout
+        android:id="@+id/relWriteReviews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <ProgressBar
+            android:id="@+id/pbWriteReview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            android:indeterminateDrawable="@drawable/custom_progress" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write a Review"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/uRHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:text="Heading:"
+            android:layout_below="@id/txtTitle"/>
+
+        <EditText
+            android:id="@+id/eTHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/color"
+            android:layout_below="@id/uRHeading"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:hint="Review Heading Goes Here" />
+
+        <TextView
+            android:id="@+id/txtSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/eTHeading"
+            android:text="Summary:" />
+
+        <EditText
+            android:id="@+id/etSummary"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/color"
+            android:paddingTop="0dp"
+            android:gravity="top"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/txtSummary"
+            android:maxLines="5"
+            android:maxLength="400"
+            android:hint="Review Summary" />
+
+        <TextView
+            android:id="@+id/txtPros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/etSummary"
+            android:text="Pros" />
+
+        <RelativeLayout
+            android:id="@+id/relWritePros"
+            android:layout_below="@id/txtPros"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/eTPros"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:singleLine="true"
+            android:maxLength="50"
+            android:layout_margin="5dp"
+            android:background="@drawable/color"
+            android:hint="Review" />
+
+        <Button
+            android:id="@+id/btnProAdd"
+            android:layout_width="50dp"
+            android:textColor="#FFF"
+            android:background="#006600"
+            android:textSize="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="+" />
+
+            <EditText
+                android:id="@+id/eTPros1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/color"
+                android:ems="10"
+                android:layout_below="@+id/eTPros"
+                android:hint="Review"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ibtnPros1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/eTPros"
+                android:background="@null"
+                android:layout_margin="5dp"
+                android:src="@android:drawable/ic_delete"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/eTPros2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:layout_below="@id/eTPros1"
+                android:background="@drawable/color"
+                android:ems="10"
+                android:hint="Review"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ibtnPros2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/eTPros1"
+                android:background="@null"
+                android:layout_margin="5dp"
+                android:src="@android:drawable/ic_delete"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/eTPros3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:layout_below="@id/eTPros2"
+                android:background="@drawable/color"
+                android:ems="10"
+                android:hint="Review"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ibtnPros3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/eTPros2"
+                android:layout_margin="5dp"
+                android:background="@null"
+                android:src="@android:drawable/ic_delete"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtCons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/relWritePros"
+            android:text="Cons" />
+
+        <RelativeLayout
+            android:id="@+id/relWriteCons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCons"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:id="@+id/eTCons"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:singleLine="true"
+                android:maxLength="50"
+                android:layout_margin="5dp"
+                android:background="@drawable/color"
+                android:hint="Review" >
+            </EditText>
+
+            <Button
+                android:id="@+id/btnConsAdd"
+                android:layout_width="50dp"
+                android:textColor="#FFF"
+                android:background="#006600"
+                android:textSize="36dp"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                android:text="+" />
+
+            <EditText
+                android:id="@+id/eTCons1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/color"
+                android:ems="10"
+                android:layout_below="@id/eTCons"
+                android:hint="Review"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ibtnCons1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/eTCons"
+                android:background="@null"
+                android:layout_margin="5dp"
+                android:src="@android:drawable/ic_delete"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/eTCons2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/color"
+                android:ems="10"
+                android:layout_below="@id/eTCons1"
+                android:hint="Review"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ibtnCons2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/eTCons1"
+                android:background="@null"
+                android:layout_margin="5dp"
+                android:src="@android:drawable/ic_delete"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/eTCons3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:background="@drawable/color"
+                android:ems="10"
+                android:layout_below="@id/eTCons2"
+                android:hint="Review"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ibtnCons3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/eTCons2"
+                android:background="@null"
+                android:layout_margin="5dp"
+                android:src="@android:drawable/ic_delete"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:id="@+id/txtRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/relWriteCons"
+            android:layout_margin="10dp"
+            android:text="Rating : " />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relWriteCons"
+            android:layout_marginLeft="26dp"
+            android:layout_toRightOf="@id/txtRate"
+            android:isIndicator="false" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:textColor="#FFF"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:background="@drawable/bluebuttoncolor"
+            android:layout_margin="10dp"
+            android:layout_below="@id/ratingBar"
+            android:text="Submit Your Review" />
+    </RelativeLayout>
+
+
+</ScrollView>
